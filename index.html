@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SneakLab | Premium Sneakers & Streetwear</title>
+  <meta name="description" content="Shop authentic sneakers, limited drops, and streetwear from SneakLab — your premium sneaker destination.">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/187/187902.png" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+    <div class="logo">SneakLab</div>
+      <nav class="links">
+        <a href="#whats-new">What's New</a>
+        <a href="#sneakers">Sneakers</a>
+        <a href="#apparel">Apparel</a>
+        <a href="#brands">Brands</a>
+
+      </nav>
+      <div class="actions">
+        <input id="searchInput" placeholder="Search sneakers..." />
+        <button id="cartBtn">Cart (0)</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>
+        Authentic Sneakers & Streetwear
+        </h1>
+        <p>Curated selection — limited drops & popular collabs</p>
+        <button id="shopNow">Shop Now</button>
+      </div>
+      
+      <div class="hero-right">
+        <img src="image/logo.png" alt="SneakLab Logo" class="brand-logo">
+
+      </div>
+      
+    </section>
+
+    <section class="filters">
+      <div>
+        <label>Category</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="high-tops">High tops</option>
+          <option value="low-tops">Low tops</option>
+          <option value="collab">Collab</option>
+        </select>
+      </div>
+      <div>
+        <label>Price</label>
+        <select id="priceFilter">
+          <option value="all">All</option>
+          <option value="under-10000">Under ₹10,000</option>
+          <option value="10000-20000">₹10,000 - ₹20,000</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="products" id="sneakers" class="product-grid">
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-centered">
+      <div>© 2025 SneakLab</div>
+      <div>Contact: sneaklab@gmail.com</div>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-body">
+      <button id="closeModal" class="close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+  <!-- Cart Sidebar -->
+<div id="cartPanel" class="cart-panel hidden">
+  <div class="cart-header">
+    <h2>Your Cart 🛒</h2>
+    <button id="closeCart" class="close">✕</button>
+  </div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total">Total: ₹<span id="cartTotal">0</span></div>
+    <button id="checkoutBtn">Proceed to Payment</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - SneakLab</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .payment-container {
+      max-width: 400px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+    button {
+      background: var(--highlight);
+      border: none;
+      color: #111;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="payment-container">
+    <h2>Secure Checkout</h2>
+    <p>Enter your payment details below:</p>
+    <input type="text" placeholder="Cardholder Name">
+    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="Expiry (MM/YY)">
+    <input type="text" placeholder="CVV">
+    <button onclick="alert('Payment Successful! 🎉')">Pay Now</button>
+  </div>
+</body>
+</html>
